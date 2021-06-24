@@ -1,4 +1,4 @@
-# Tagmen Suite
+# Tagmen
 ## Steps
 ### 0) Install dependencies
 Install python dependencies:
