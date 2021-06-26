@@ -74,13 +74,16 @@ for file_pair in get_paired_files_from_dir(readtag_dir):
                     foundInR2 += 1
 
     logging.info(
-        f"Length distribution of 15N sequence: {counts}. If there are many matches at the edge cases consider allowing a broader range.")
+        f"Length distribution of 15N sequence: {counts}. "
+        f"If there are many matches at the edge cases consider allowing a broader range.")
     logging.info(f"Alternatives matches for AP1A: {ap1a_alt}")
     logging.info(f"Alternatives matches for LoopFw: {loopfw_alt}")
     logging.info(f"Alternatives matches for AP2A: {ap2a_alt}")
     logging.info(f"Alternatives matches for LoopRv: {looprv_alt}")
 
     logging.info(
-        f"R1: Found structure in {100 * foundInR1 / total}% (total: {total}, found: {foundInR1}) of sequences for sample {sample_id}")
+        f"R1: Found structure in {100 * foundInR1 / total}% (total: {total}, "
+        f"found: {foundInR1}) of sequences for sample {sample_id}")
     logging.info(
-        f"R2: Found structure in {100 * foundInR2 / total}% (total: {total}, found: {foundInR2}) of sequences for sample {sample_id}")
+        f"R2: Found structure in {100 * foundInR2 / total}% (total: {total}, "
+        f"found: {foundInR2}) of sequences for sample {sample_id}")
