@@ -68,7 +68,7 @@ def string_match(str1, str2, allowed_mismatches):
         if mismatch_counter > allowed_mismatches:
             return False, mismatch_counter
 
-        if not char is str2[i]:
+        if char is not str2[i]:
             mismatch_counter += 1
         i += 1
 
