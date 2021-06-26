@@ -19,7 +19,7 @@ parser.add_argument('output_base', type=str, help='Folder to write output to')
 args = parser.parse_args()
 try_fuzzy = False
 
-SeqenceAndQuality = namedtuple('SequenceAndQuality', ['seq', 'qual'])
+SequenceAndQuality = namedtuple('SequenceAndQuality', ['seq', 'qual'])
 
 
 def read_fastq(fq_file):
@@ -31,7 +31,7 @@ def read_fastq(fq_file):
             sequence = file.readline().strip()
             file.readline()
             quality = file.readline().strip()
-            reads[header] = SeqenceAndQuality(seq=sequence, qual=quality)
+            reads[header] = SequenceAndQuality(seq=sequence, qual=quality)
 
     return reads
 
