@@ -1,11 +1,16 @@
 # Tagmen
 ## Steps
 ### 0) Install dependencies
-Install python dependencies:
+#### Script dependencies
+Dependencies of the scripts are listed in the requirements.txt file. 
+Those python dependencies may be installed by running the following `pip` command.
 ```shell script
 pip install -r requirements.txt
 ```
-Also make sure cd-hit is installed.
+
+#### Additional dependencies
+This tool uses `cd-hit-est` for clustering nucleotide sequences, so also make sure `cd-hit` is installed.
+`cd-hit` is e.g. available from bioconda, or the debian package manager.
 
 ### 1) Extract 15N sequences from RT files
 Move all RT sample files you want to analyze to a folder.
