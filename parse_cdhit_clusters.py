@@ -4,9 +4,7 @@ import argparse
 import logging
 from collections import namedtuple, Counter
 
-logging.basicConfig(
-    level=logging.INFO
-)
+logging.basicConfig(level=logging.DEBUG)
 
 parser = argparse.ArgumentParser()
 parser.add_argument('readtag_tsv', type=argparse.FileType('r'), help="TSV output from readtag script")
