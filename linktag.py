@@ -56,4 +56,5 @@ for file_pair in get_paired_files_from_dir(linktag_dir):
                     continue
 
     logging.info(
-        f"Found structure in {100 * found / total}% (total: {total}, found: {found}) of sequences for sample {sample_id}")
+        f"Found structure in {100 * found / total}% (total: {total}, "
+        f"found: {found}) of sequences for sample {sample_id}")
