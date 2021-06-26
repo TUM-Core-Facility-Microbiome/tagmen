@@ -22,7 +22,6 @@ logging.info(f'Output Folder: {output_dir!r}')
 # create output dir if it does not exist
 os.makedirs(output_dir, exist_ok=True)
 
-FilePair = namedtuple('FilePair', ['R1', 'R2'])
 
 RC_AP2A = "GGTTGATACCGGTGT"
 AP1A = "TCGGAATTTCCCAGC"
