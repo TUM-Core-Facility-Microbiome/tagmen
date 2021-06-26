@@ -9,9 +9,7 @@ import regex
 
 from utils.trie import Trie
 
-logging.basicConfig(
-    level=logging.DEBUG
-)
+logging.basicConfig(level=logging.DEBUG)
 
 parser = argparse.ArgumentParser()
 parser.add_argument('pairs_tsv', type=argparse.FileType('r'), help='TSV file with pairing information from linktags')
